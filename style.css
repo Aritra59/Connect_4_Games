@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-image: url(https://img.freepik.com/free-photo/solid-concrete-wall-textured-backdrop_53876-129493.jpg?w=1380&t=st=1710995863~exp=1710996463~hmac=450d44da74353f0fc9b838e389f370c82062bec262924c64dbfb3153d4e7f759);
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  color: white;
+  font-size: 70px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 2px solid black;
+  width: 630px;
+  background-color: rgba(212, 199, 199, 0.247);
+  border-radius: 20px;
+}
+
+ul {
+  display: grid;
+  place-items: center;
+}
+
+ul p {
+  margin: 5px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color: white;
+}
+
+ul p:hover {
+  cursor: pointer;
+  background-color: rgb(98, 136, 238);
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    color: white;
+    background-color: #3a4452;
+}
+
+@media (max-width: 700px) {
+  .board {
+    width: 500px;
+  }
+  ul p {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media (max-width: 520px) {
+  .board {
+    width: 400px;
+  }
+  ul p {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .board {
+    width: 320p3;
+  }
+  ul p {
+    width: 30px;
+    height: 30px;
+  }
+}
